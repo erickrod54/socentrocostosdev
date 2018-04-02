@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@panel_control');
+Route::get('/puntos', 'PagesController@puntos');
+Route::get('/factura', 'PagesController@factura');
